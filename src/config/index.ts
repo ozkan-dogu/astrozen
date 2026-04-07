@@ -1,10 +1,10 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Ozkan Dogu — Senior Software Developer",
+  author: "Ozkan Dogu",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Senior Software Developer based in Izmir, Turkiye. I build scalable frontend and full-stack products for global teams.",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
   navLinks: [
@@ -13,83 +13,125 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://linkedin.com/in/ozkan-dogu" },
   ],
   socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Ozkan Dogu",
+    specialty: "Senior Software Developer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Senior Software Developer based in Izmir, Turkiye, delivering frontend and full-stack solutions for international teams.",
+    email: "ozkandgu@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Seaborn Software",
+      position: "Senior Frontend Developer",
+      startDate: "Apr 2024",
+      endDate: "Current",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Led the frontend development of a ship supply ERP startup product from inception to launch, helping secure investment and open new growth opportunities.",
+        "Built feature-rich administrator dashboards that delivered actionable insights and operational tooling.",
+        "Developed an in-platform support chat system for real-time communication and faster issue resolution.",
+        "Implemented secure authentication and role-based authorization for reliable access control across user levels.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Asendia",
+      position: "Full Stack Developer",
+      startDate: "Feb 2023",
+      endDate: "Apr 2024",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Engineered scalable logistics management systems with .NET Core and Angular to improve operational efficiency.",
+        "Developed a ticket management system that reduced issue resolution time by 25%.",
+        "Contributed to routing comparison and operational process modules to improve logistics workflows.",
+        "Built integration services for the Asendia USA project to coordinate communication with systems used in 15 countries.",
       ],
     },
     {
-      company: "Driveer",
+      company: "EPAM Systems",
+      position: "Senior Frontend Developer",
+      startDate: "Mar 2021",
+      endDate: "Feb 2023",
+      summary: [
+        "Implemented headless commerce architectures to improve platform flexibility and scalability.",
+        "Automated CI/CD pipelines with Jenkins, reducing deployment times and release errors.",
+        "Optimized frontend performance with lazy loading, caching, and prefetching for faster page responsiveness.",
+      ],
+    },
+    {
+      company: "EPAM Systems",
       position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      startDate: "Mar 2019",
+      endDate: "Mar 2021",
+      summary: [
+        "Managed daily production releases by monitoring metrics, triaging issues, and coordinating hotfixes.",
+        "Wrote unit tests with Jasmine and helped maintain about 80% coverage on critical modules.",
+        "Led development of a reusable UI component library with the design team for SAP Spartacus and Hybris apps.",
+      ],
+    },
+    {
+      company: "Eyedius Security Systems",
+      position: "Freelance Frontend Developer",
+      startDate: "TBD",
+      endDate: "TBD",
+      summary: [
+        "Developed a single-page B2B platform to manage embedded security camera devices.",
+        "Designed responsive admin panels and reusable UI components for device operations.",
+        "Built real-time dashboards using SocketIO, Google Maps, and ngx-charts for live monitoring.",
+        "Delivered cross-platform web solutions with strong accessibility across devices.",
+      ],
+    },
+    {
+      company: "Miya Automation And Barcode Systems",
+      position: "Frontend Developer",
+      startDate: "Jan 2018",
+      endDate: "Mar 2019",
+      summary: [
+        "Designed and shipped a B2B marketplace and tire tracking application using Ionic.",
+        "Ensured cross-platform compatibility and optimized performance across devices and operating systems.",
+        "Contributed to daily production release rotations, including monitoring, triage, and hotfix coordination.",
+      ],
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
+      name: "Project details coming soon",
+      summary:
+        "Portfolio project details will be added after final project selection.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
+      linkSource: "https://linkedin.com/in/ozkan-dogu",
       image: "/spotifu.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
+      name: "Case study coming soon",
+      summary:
+        "This slot will be replaced with a real product case study and source links.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
+      linkSource: "https://linkedin.com/in/ozkan-dogu",
       image: "/shopify-clon.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
+      name: "Technical showcase coming soon",
+      summary:
+        "A detailed implementation-focused project entry will be added soon.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
+      linkSource: "https://linkedin.com/in/ozkan-dogu",
       image: "/clone-ig.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      I am Ozkan Dogu, a Senior Software Developer focused on frontend architecture, product delivery, and scalable web applications. I currently work remotely from Izmir, Turkiye, and collaborate with international teams to build reliable user-facing systems.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      My recent work spans ERP platforms, logistics systems, and headless commerce solutions with Angular, TypeScript, .NET Core, and modern CI/CD workflows. I prioritize maintainable component systems, secure authentication flows, and measurable performance improvements.
+
+      Education: Anadolu University (Management Information Systems) and Dokuz Eylul University (Computer Programming). Core skills include JavaScript, TypeScript, Angular, RxJS, NgRx, Vue, SocketIO, ASP.NET Core, Jenkins, SQL, and collaborative product tooling.
+
+      Contact: ozkandgu@gmail.com | +90 (553) 214 66 81
     `,
     image: "/alejandro-big.jpg",
   },

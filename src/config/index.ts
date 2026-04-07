@@ -7,6 +7,7 @@ export const SITE_CONFIG: SiteConfig = {
     "Senior Software Developer based in Izmir, Turkiye. I build scalable frontend and full-stack products for global teams.",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
+  canonicalURL: "https://ozkandogu.dev/",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },

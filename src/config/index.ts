@@ -102,7 +102,7 @@ export const SITE_CONTENT: SiteContent = {
         "Full-stack ERP and warehouse management system built from scratch for the maritime supply industry. Angular 17+ with Signals & NgRx on the frontend; ASP.NET Core layered API on the backend. Real-time SocketIO sync, IndexedDB offline-first layer, and a Flutter barcode scanning module. Helped the product secure seed funding.",
       linkPreview: "https://appa.shipsupply.app",
       linkSource: "https://linkedin.com/in/ozkan-dogu",
-      image: "/spotifu.png",
+      image: "/seaborn.png",
     },
     {
       name: "International Logistics Platform — Asendia",
@@ -110,7 +110,7 @@ export const SITE_CONTENT: SiteContent = {
         "Multi-country logistics management system serving 15+ countries. C# / ASP.NET Core RESTful services with typed contracts and multi-region data sync pipelines. Angular frontend with NgRx state management and a SASS design system. PostgreSQL query optimisation delivering a 25% efficiency gain on high-volume shipping data.",
       linkPreview: "https://www.asendia.com",
       linkSource: "https://linkedin.com/in/ozkan-dogu",
-      image: "/shopify-clon.png",
+      image: "/asendia.png",
     },
     {
       name: "Headless Commerce Platforms — EPAM & Emakina",
@@ -118,7 +118,7 @@ export const SITE_CONTENT: SiteContent = {
         "Enterprise frontend delivery for Crate & Barrel, AllSaints, LEGO, CB2, and Rivoli Shop using SAP Spartacus (Angular) and Vue Storefront. Led CI/CD pipeline automation with Jenkins, cutting release cycles by 40%. Improved Core Web Vitals across high-traffic global commerce platforms.",
       linkPreview: "https://www.crateandbarrel.com",
       linkSource: "https://linkedin.com/in/ozkan-dogu",
-      image: "/clone-ig.png",
+      image: "/lego.png",
     },
   ],
   about: {

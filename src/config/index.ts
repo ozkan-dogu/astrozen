@@ -1,12 +1,12 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Ozkan Dogu — Senior Software Developer",
+  title: "Ozkan Dogu — Senior Software Engineer",
   author: "Ozkan Dogu",
   description:
-    "Senior Software Developer based in Izmir, Turkiye. I build scalable frontend and full-stack products for global teams.",
+    "Senior Software Engineer with 8+ years of full-stack experience. Angular, React, .NET Core, and Node.js — building scalable products for global teams from Izmir, Turkiye.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/pp.jpg",
   canonicalURL: "https://ozkandogu.dev/",
   navLinks: [
     { text: "Experience", href: "#experience" },
@@ -22,22 +22,23 @@ export const SITE_CONFIG: SiteConfig = {
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Ozkan Dogu",
-    specialty: "Senior Software Developer",
+    specialty: "Senior Software Engineer — Full Stack",
     summary:
-      "Senior Software Developer based in Izmir, Turkiye, delivering frontend and full-stack solutions for international teams.",
+      "Full stack engineer with 8+ years of end-to-end product ownership. Angular, React, Next.js on the frontend; C#, ASP.NET Core, Node.js on the backend. Shipped a complete ship-supply ERP from scratch, built platforms running across 15+ countries, and delivered for global brands including LEGO, Crate & Barrel, and AllSaints.",
     email: "ozkandgu@gmail.com",
   },
   experience: [
     {
       company: "Seaborn Software",
-      position: "Senior Frontend Developer",
+      position: "Senior Full Stack Developer",
       startDate: "Apr 2024",
       endDate: "Current",
       summary: [
-        "Led the frontend development of a ship supply ERP startup product from inception to launch, helping secure investment and open new growth opportunities.",
-        "Built feature-rich administrator dashboards that delivered actionable insights and operational tooling.",
-        "Developed an in-platform support chat system for real-time communication and faster issue resolution.",
-        "Implemented secure authentication and role-based authorization for reliable access control across user levels.",
+        "Sole architect of a ship-supply ERP and WMS built from scratch — selected the full tech stack, owned end-to-end delivery across frontend and backend layers, and helped the product secure seed funding.",
+        "Built Angular 17+ frontend with Signals-based reactive state and NgRx — multi-role workflow UIs, reactive forms, granular access control, and Figma-to-production component delivery.",
+        "Designed and implemented RESTful API services, data models, and business logic with a clean layered architecture (service / repository / data layers).",
+        "Implemented SocketIO-based live state sync across all roles and an IndexedDB (Dexie.js) offline data layer for resilient maritime operations.",
+        "Built a Flutter cross-platform module for barcode scanning and warehouse inventory tracking.",
       ],
     },
     {
@@ -46,10 +47,9 @@ export const SITE_CONTENT: SiteContent = {
       startDate: "Feb 2023",
       endDate: "Apr 2024",
       summary: [
-        "Engineered scalable logistics management systems with .NET Core and Angular to improve operational efficiency.",
-        "Developed a ticket management system that reduced issue resolution time by 25%.",
-        "Contributed to routing comparison and operational process modules to improve logistics workflows.",
-        "Built integration services for the Asendia USA project to coordinate communication with systems used in 15 countries.",
+        "Designed and developed RESTful C# services in ASP.NET Core — typed request/response contracts, error handling middleware, and multi-region data synchronisation pipelines for logistics operations across 15+ countries.",
+        "Optimised Entity Framework Core data models and migration strategies on PostgreSQL for high-volume international shipping data, achieving a 25% efficiency gain.",
+        "Built a multi-module Angular application with NgRx state management, lazy-loaded feature modules, and a SASS design system consuming the .NET Core API layer.",
       ],
     },
     {
@@ -58,32 +58,30 @@ export const SITE_CONTENT: SiteContent = {
       startDate: "Mar 2021",
       endDate: "Feb 2023",
       summary: [
-        "Implemented headless commerce architectures to improve platform flexibility and scalability.",
-        "Automated CI/CD pipelines with Jenkins, reducing deployment times and release errors.",
-        "Optimized frontend performance with lazy loading, caching, and prefetching for faster page responsiveness.",
+        "Led Angular frontend tracks for Crate & Barrel and AllSaints using SAP Spartacus — defined API contracts with backend teams, conducted code reviews, and ran sprint planning in international Agile/Scrum.",
+        "Built Jenkins CI/CD pipelines with automated build, lint, test, and deploy stages — cutting production release cycles by 40%.",
+        "Improved Core Web Vitals (LCP, CLS, FID) via lazy loading, caching, and data prefetching on high-traffic global commerce platforms.",
       ],
     },
     {
-      company: "EPAM Systems",
+      company: "Emakina",
       position: "Frontend Developer",
       startDate: "Mar 2019",
       endDate: "Mar 2021",
       summary: [
-        "Managed daily production releases by monitoring metrics, triaging issues, and coordinating hotfixes.",
-        "Wrote unit tests with Jasmine and helped maintain about 80% coverage on critical modules.",
-        "Led development of a reusable UI component library with the design team for SAP Spartacus and Hybris apps.",
+        "Delivered headless commerce for LEGO and CB2 using SAP Spartacus (Angular) and for Rivoli Shop using Vue Storefront (VueJS — Vue Router, Vuex, Axios) with ContentStack CMS integration.",
+        "Built brand-aligned, Figma-accurate, Storybook-documented component libraries for three global and regional brands, enabling 30% faster cross-market delivery.",
+        "Established Jasmine/Karma unit testing protocols maintaining 80%+ coverage on critical modules.",
       ],
     },
     {
       company: "Eyedius Security Systems",
-      position: "Freelance Frontend Developer",
-      startDate: "TBD",
-      endDate: "TBD",
+      position: "Contract Frontend Developer",
+      startDate: "Sept 2018",
+      endDate: "Dec 2018",
       summary: [
-        "Developed a single-page B2B platform to manage embedded security camera devices.",
-        "Designed responsive admin panels and reusable UI components for device operations.",
-        "Built real-time dashboards using SocketIO, Google Maps, and ngx-charts for live monitoring.",
-        "Delivered cross-platform web solutions with strong accessibility across devices.",
+        "Established Jasmine/Karma unit testing protocols achieving 80%+ coverage on critical modules.",
+        "Built a Storybook component library and enforced ESLint/Prettier codebase standards across the project.",
       ],
     },
     {
@@ -92,9 +90,8 @@ export const SITE_CONTENT: SiteContent = {
       startDate: "Jan 2018",
       endDate: "Mar 2019",
       summary: [
-        "Designed and shipped a B2B marketplace and tire tracking application using Ionic.",
-        "Ensured cross-platform compatibility and optimized performance across devices and operating systems.",
-        "Contributed to daily production release rotations, including monitoring, triage, and hotfix coordination.",
+        "Built a live B2B security monitoring platform with SocketIO event feeds, Google Maps API device tracking, alert routing, and fleet status panels — with daily release rotation and production incident management.",
+        "Delivered an end-to-end Ionic B2B mobile app (App Store / Play Store) with barcode scanning and IoT device integrations.",
       ],
     },
   ],
@@ -126,15 +123,17 @@ export const SITE_CONTENT: SiteContent = {
   ],
   about: {
     description: `
-      I am Ozkan Dogu, a Senior Software Developer focused on frontend architecture, product delivery, and scalable web applications. I currently work remotely from Izmir, Turkiye, and collaborate with international teams to build reliable user-facing systems.
+      I am Ozkan Dogu, a Senior Software Engineer with 8+ years of end-to-end product ownership — spanning modern frontend frameworks and robust backend services. I work remotely from Izmir, Turkiye, and collaborate with international teams across the UK, US, and Europe.
 
-      My recent work spans ERP platforms, logistics systems, and headless commerce solutions with Angular, TypeScript, .NET Core, and modern CI/CD workflows. I prioritize maintainable component systems, secure authentication flows, and measurable performance improvements.
+      My recent work includes architecting a complete ship-supply ERP and WMS from scratch at a seed-funded startup, building .NET Core APIs and Angular platforms running across 15+ countries, and leading enterprise frontend delivery for global brands including Crate & Barrel, AllSaints, LEGO, CB2, and Rivoli Shop.
 
-      Education: Anadolu University (Management Information Systems) and Dokuz Eylul University (Computer Programming). Core skills include JavaScript, TypeScript, Angular, RxJS, NgRx, Vue, SocketIO, ASP.NET Core, Jenkins, SQL, and collaborative product tooling.
+      On the frontend I work with Angular 17+, React, Next.js, and Vue.js. On the backend: C#, ASP.NET Core, Entity Framework Core, Node.js, PostgreSQL, and GraphQL. Mobile: Flutter and Ionic. I bring a strong product mindset, CI/CD culture, and a track record of working autonomously in fully remote teams.
+
+      Education: Dokuz Eylul University — Computer Programming (2018), Izmir, Turkiye.
 
       Contact: ozkandgu@gmail.com | +90 (553) 214 66 81
     `,
-    image: "/alejandro-big.jpg",
+    image: "/pp.jpg",
   },
 };
 

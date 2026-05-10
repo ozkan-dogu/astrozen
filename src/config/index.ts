@@ -116,9 +116,15 @@ export const SITE_CONTENT: SiteContent = {
       name: "Headless Commerce Platforms — EPAM & Emakina",
       summary:
         "Enterprise frontend delivery for Crate & Barrel, AllSaints, LEGO, CB2, and Rivoli Shop using SAP Spartacus (Angular) and Vue Storefront. Led CI/CD pipeline automation with Jenkins, cutting release cycles by 40%. Improved Core Web Vitals across high-traffic global commerce platforms.",
-      linkPreview: "https://www.crateandbarrel.com",
       linkSource: "https://linkedin.com/in/ozkan-dogu",
       image: "/lego.png",
+      previewLinks: [
+        { label: "Crate & Barrel", href: "https://www.crateandbarrel.com" },
+        { label: "AllSaints", href: "https://www.allsaints.com" },
+        { label: "LEGO", href: "https://www.lego.com" },
+        { label: "CB2", href: "https://www.cb2.com" },
+        { label: "Rivoli Shop", href: "https://www.rivolishop.com" },
+      ],
     },
   ],
   about: {

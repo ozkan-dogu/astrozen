@@ -8,11 +8,15 @@ interface Props {
 }
 
 const { projects } = Astro.props;
+
+type ProjectWithExtras = (typeof projects)[number] & {
+  previewLinks?: { label: string; href: string }[];
+};
 ---
 
 <Section text="Featured Projects" href="projects">
   {
-    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
+    (projects as ProjectWithExtras[]).map(({ name, summary, image, linkPreview, linkSource, previewLinks }, index) => {
       const top = 98 + index * 40;
       return (
         <div
@@ -25,21 +29,43 @@ const { projects } = Astro.props;
                 {name}
               </h3>
               <p class="text-base text-neutral">{summary}</p>
-              <div class="flex gap-5 pt-10 text-white">
-                <a
-                  href={linkSource}
-                  target="_blank"
-                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                >
-                  Source
-                </a>
-                <a
-                  href={linkPreview}
-                  target="_blank"
-                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                >
-                  Preview
-                </a>
+              <div class="pt-10 text-white">
+                {previewLinks && previewLinks.length > 0 ? (
+                  <ul class="flex flex-col gap-2">
+                    {previewLinks.map(({ label, href }) => (
+                      <li>
+                        <a
+                          href={href}
+                          target="_blank"
+                          class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                        >
+                          {label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div class="flex gap-5">
+                    {linkSource && (
+                      <a
+                        href={linkSource}
+                        target="_blank"
+                        class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                      >
+                        Source
+                      </a>
+                    )}
+                    {linkPreview && (
+                      <a
+                        href={linkPreview}
+                        target="_blank"
+                        class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                      >
+                        Preview
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
             <div class="flex items-end justify-end overflow-hidden">

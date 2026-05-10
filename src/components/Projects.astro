@@ -31,7 +31,7 @@ type ProjectWithExtras = (typeof projects)[number] & {
               <p class="text-base text-neutral">{summary}</p>
               <div class="pt-10 text-white">
                 {previewLinks && previewLinks.length > 0 ? (
-                  <ul class="flex flex-col gap-2">
+                  <ul class="flex flex-wrap gap-x-6 gap-y-3">
                     {previewLinks.map(({ label, href }) => (
                       <li>
                         <a
